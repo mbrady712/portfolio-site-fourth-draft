@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*SEVERAL SECTIONS/PAGES*/
+
+h1 {
+    text-align: center;
+    padding: 3%;
+    color: #FFCB9A;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*NAV*/
+
+.nav{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.nav-link{
+    color: #D1E8E2 !important;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+.nav-link:hover{
+    color: #FFCB9A !important;
+    transition: .25s;
+}
+
+/*HOME*/
+
+.home{
+    height: 100vh;
+    background-color: #2C3531;
+}
+.portrait{
+    border-radius: 50%;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*320px — 480px: Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .home{
+        height: 50vh;
+        padding-top: 15%;
+    }
+    .portrait{
+        width: 100px;
+    }
+}
+    
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .home{
+        height: auto;
+        padding-top: 5%;
+    }
+    .portrait{
+        width: 150px;
+    }
+}
+    
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .home{
+        padding-top: 5%;
+    }
+}
+    
+/*1025px — 1205px: Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1205px){
+    .home{
+        padding-top: 5%;
+    }
+}
+
+/*ABOUT*/
+
+.about{
+    height: 100vh;
+    background-color: #116466;
+}
+.abtwrap{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 4%;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #D1E8E2;
+    font-size: 1.3em;
+}
+/*320px — 480px: Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .about{
+        height: auto;
+    }
+}
+    
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .about{
+        height: auto;
+    }
+}
+    
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+    
+/*1025px — 1205px: Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1205px){
+
+}
+/*PROJECTS*/
+
+.projects{
+    height: 100vh;
+    background-color: #2C3531;
+}
+.carousel{
+    width: 60%;
+    margin-left: 20%;
+}
+.caption{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #116466;
+}
+.caption:hover{
+    color: #D1E8E2;
+    transition: .25s;
+}
+.carousel-caption{
+    margin-bottom: 5%;
+    background-color: rgba(255,203,154,.9);
+    border-radius: 5px;
+}
+/*320px — 480px: Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .carousel{
+        width: 100%;
+        margin: 0;
+    }
+    .projects{
+        height: auto;
+    }
+    .carousel-caption{
+        font-size: .75em;
+    }
+}
+    
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .projects{
+        height: auto;
+    }
+    .carousel{
+        width: 100%;
+        margin: 0;
+    }
+    .carousel-caption{
+        font-size: .75em;
+    }
+}
+    
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .carousel{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+    
+/*1025px — 1205px: Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1205px){
+
+}
+
+/*CONTACT*/
+
+.contact{
+    height: 100vh;
+    background-color: #116466;
+}
+form{
+    margin-left: 25% !important;
+    background-color: #D9B08C;
+    padding: 2%;
+    border-radius: 10px;
+    width: 50% !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    background-color: #D1E8E2 !important;
+    margin-bottom: 2%;
+}
+textarea{
+    background-color: #D1E8E2 !important;
+}
+.error{
+    color: red;
+}
+.submit{
+    width: 20%;
+    margin-top: 2%;
+    border-radius: 5px;
+    background-color: #FFCB9A;
+    color:black;
+    
+}
+.submit:hover{
+    background-color: #116466 !important;
+    color:white;
+    transition: .25s;
+}
+footer{
+    text-align: center;
+    margin-top: 4%;
+    color: #FFCB9A !important;
+    border-top: #FFCB9A solid 3px;
+    border-radius: 50%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.fa-linkedin{
+    padding-right: 1%;
+    text-decoration: none;
+    color: #FFCB9A !important;
+}
+.fa-github{
+    text-decoration: none;
+    color: #FFCB9A !important;
+}
+.fa-envelope{
+    padding-left: 1%;
+    text-decoration: none;
+    color: #FFCB9A !important;
+    transform: scale(1.5);
+}
+.fa-phone-alt{
+    color: #FFCB9A !important;
+}
+.copy{
+    font-size: .75em;
+}
+.fa:hover{
+    color: #D1E8E2 !important;
+    transition: .25s;
+}
+.fas:hover{
+    color: #D1E8E2 !important;
+    transition: .25s;
+}
+/*320px — 480px: Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    form{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .submit{
+        width: 30%;
+    }
+    footer{
+        font-size: .75em;
+    }
+    .fa-linkedin{
+        padding-right: 2%;
+    }
+    .fa-envelope{
+        padding-left: 2%;
+    }
+}
+    
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    form{
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+}
+    
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+    
+/*1025px — 1205px: Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1205px){
+
+}
