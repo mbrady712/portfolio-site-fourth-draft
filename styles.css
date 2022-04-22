@@ -30,8 +30,8 @@ h1 {
     color: #FFCB9A !important;
 }
 
-/*320 — 767px: Mobile devices, iPads, Tablets*/
-@media only screen and (min-width: 320px) and (max-width: 767px){
+/*280 — 767px: Mobile devices, iPads, Tablets*/
+@media only screen and (min-width: 280px) and (max-width: 767px){
     .homelink{
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -50,7 +50,7 @@ h1 {
 /*HOME*/
 
 .home{
-    padding-top: 3%;
+    padding-top: 70px;
     height: 100vh;
     background-color: #2C3531;
 }
@@ -62,10 +62,11 @@ h1 {
     margin-right: auto;
 }
 
-/*320px — 480px: Mobile devices*/
-@media only screen and (min-width: 320px) and (max-width: 480px){
+/*280 — 767px: Mobile devices, iPads, Tablets*/
+@media only screen and (min-width: 280px) and (max-width: 767px){
     .home{
-        padding-top: 25%;
+        height: auto;
+        padding-bottom: 5%;
     }
     .portrait{
         width: 200px;
@@ -75,7 +76,8 @@ h1 {
 /*481px — 768px: iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .home{
-        padding-top: 15%;
+        height: auto;
+        padding-bottom: 5%;
     }
     .portrait{
         width: 200px;
@@ -84,11 +86,19 @@ h1 {
     
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-    .home{
-        padding-top: 10%;
-    }
     .portrait{
         width: 250px;
+    }
+    .home{
+        height: auto;
+        padding-bottom: 5%;
+    }
+}
+/*1025px — 1280px: Desktops, Large Screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+    .home{
+        height: auto;
+        padding-bottom: 5%;
     }
 }
     
@@ -98,7 +108,7 @@ h1 {
 .about{
     height: 100vh;
     background-color: #116466;
-    padding-top: 3%;
+    padding-top: 70px;
 }
 .abtwrap{
     margin-left: 10%;
@@ -108,11 +118,10 @@ h1 {
     color: #D1E8E2;
     font-size: 1.3em;
 }
-/*320px — 480px: Mobile devices*/
-@media only screen and (min-width: 320px) and (max-width: 480px){
+/*280 — 767px: Mobile devices, iPads, Tablets*/
+@media only screen and (min-width: 280px) and (max-width: 767px){
     .about{
         height: auto;
-        padding-top: 20%;
         padding-bottom: 5%;
     }
 }
@@ -121,30 +130,25 @@ h1 {
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .about{
         height: auto;
-        padding-top: 10%;
         padding-bottom: 5%;
     }
 }
-    
+
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     .about{
-        padding-top: 7%;
+        height: auto;
+        padding-bottom: 5%;
     }
 }
-    
-/*1025px — 1205px: Desktops, large screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1205px){
-    .about{
-        padding-top: 5%;
-    }
-}
+
 /*PROJECTS*/
 
 .projects{
-    height: 100vh;
+    height: auto;
     background-color: #2C3531;
-    padding-top: 3%;
+    padding-top: 70px;
+    padding-bottom: 5%;
 }
 .carousel{
     width: 60%;
@@ -165,8 +169,8 @@ h1 {
     background-color: rgba(255,203,154,.9);
     border-radius: 5px;
 }
-/*320px — 370px: Small Mobile devices*/
-@media only screen and (min-width: 320px) and (max-width: 370px){
+/*280 — 767px: Mobile devices, iPads, Tablets*/
+@media only screen and (min-width: 280px) and (max-width: 767px){
     .carousel{
         width: 100%;
         margin-left: 0;
@@ -175,31 +179,12 @@ h1 {
         font-size: .75em;
     }
     .projects{
-        padding-top: 20%;
-        height: 70vh;
-    }
-}
-
-/*371px — 480px: Large Mobile devices*/
-@media only screen and (min-width: 371px) and (max-width: 480px){
-    .carousel{
-        width: 100%;
-        margin-left: 0;
-    }
-    .carousel-caption{
-        font-size: .75em;
-    }
-    .projects{
-        padding-top: 15%;
-        height: 90vh;
+        height: auto;
     }
 }
     
 /*481px — 768px: iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
-    .projects{
-        padding-top: 60px;
-    }
     .carousel{
         width: 80%;
         margin-left: 10%;
@@ -207,23 +192,16 @@ h1 {
     .carousel-caption{
         font-size: .75em;
     }
+    .projects{
+        height: auto;
+    }
 }
     
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-    .projects{
-        padding-top: 5%;
-    }
     .carousel{
         width: 80%;
         margin-left: 10%;
-    }
-}
-    
-/*1025px — 1205px: Desktops, large screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1205px){
-    .projects{
-        padding-top: 5%;
     }
 }
 
@@ -232,7 +210,7 @@ h1 {
 .contact{
     height: 100vh;
     background-color: #116466;
-    padding-top: 3%;
+    padding-top: 70px;
 }
 form{
     margin-left: 25% !important;
@@ -305,10 +283,10 @@ footer{
 .fas:hover{
     color: #D1E8E2 !important;
 }
-/*320px — 480px: Mobile devices*/
-@media only screen and (min-width: 320px) and (max-width: 480px){
+/*280 — 767px: Mobile devices, iPads, Tablets*/
+@media only screen and (min-width: 280px) and (max-width: 767px){
     .contact{
-        padding-top: 15%;
+        height: auto;
     }
     form{
         width: 100% !important;
@@ -331,9 +309,6 @@ footer{
     
 /*481px — 768px: iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
-    .contact{
-        padding-top: 11%;
-    }
     footer{
         margin-top: 2%;
     }
@@ -341,29 +316,33 @@ footer{
         width: 80% !important;
         margin-left: 10% !important;
     }
+    .contact{
+        height: auto;
+    }
 }
     
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-    .contact{
-        padding-top: 7%;
-    }
     footer{
         margin-top: 7%;
     }
-}
-    
-/*1025px — 1205px: Desktops, large screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1205px){
     .contact{
-        padding-top: 5%;
+        height: auto;
     }
 }
+/*1025px — 1280px: Desktops, Large Screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+    .contact{
+        height: auto;
+        padding-top: 0;
+    }
+}
+    
 
 /*SITE PAGES*/
 .grey{
     background-color: #2C3531;
-    padding-top: 5%;
+    padding-top: 70px;
 }
 .sitepic{
     width: 60%;
@@ -395,22 +374,19 @@ footer{
 .sitelink:hover{
     color: #FFCB9A;
 }
-/*320px — 480px: Mobile devices*/
-@media only screen and (min-width: 320px) and (max-width: 480px){
-    .grey{
-        padding-top: 20%;
-    }
+/*280 — 767px: Mobile devices, iPads, Tablets*/
+@media only screen and (min-width: 280px) and (max-width: 767px){
     .sitepic{
         width: 100%;
         margin: 0;
+    }
+    .description{
+        margin-top: 5%;
     }
 }
     
 /*481px — 768px: iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
-    .grey{
-        padding-top: 13%;
-    }
     .sitepic{
         width: 100%;
         margin: 0;
@@ -422,10 +398,13 @@ footer{
     
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-    .grey{
-        padding-top: 7%;
+    .sitepic{
+        width: 100%;
+        margin: 0;
     }
     .description{
-        margin-top: 3%;
+        margin-top: 15%;
+        font-size: 1.5em;
+        margin-bottom: 15%;
     }
 }
