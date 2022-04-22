@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon-1.png"/>
     <title>Michael Brady</title>
+    <meta
+      name="Michael Brady"
+      content="Originally from Baltimore, MD, I came to Austin to study piano at UT. I graduated with my Bachelor's in Music 
+      Performance in Piano in 2019 and went on to obtain my Master's in Piano Performance from Texas State in 2021. 
+      I currently teach piano at the Orpheus Academy of Music in Austin, TX."
+    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="nav">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
+                  <li class="nav-item homelink">
                     <a class="nav-link" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
@@ -30,8 +38,8 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
+                  <li class="nav-item resume">
+                    <a class="nav-link" href="images/Michael_Brady_Resume.pdf">Resume</a>
                   </li>
                 </ul>
               </div>
@@ -86,55 +94,55 @@
               <div class="carousel-item active">
                 <img src="./images/pianowithgeorgia.png" class="d-block w-100" alt="Piano with Georgia"/>
                 <div class="carousel-caption">
-                  <a href="https://pianowithgeorgia.com" class="caption red-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Piano with Georgia</a>
+                  <a href="georgia.html" class="caption red-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Piano with Georgia</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./images/mars.png" class="d-block w-100" alt="Mars"/>
                 <div class="carousel-caption">
-                  <a href="http://webtrain.austincc.edu/~mbrady/interactiondesign/COMPLETE/14-mars.html"
+                  <a href="mars.html"
                   class="caption">Mars</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./images/intdirect.png" class="d-block w-100" alt="Interaction Design Exercises"/>
                 <div class="carousel-caption">
-                  <a href="http://webtrain.austincc.edu/~mbrady/interactiondesign/COMPLETE/directory.html" 
+                  <a href="intdesign.html" 
                   class="caption">Interaction Design Exercises</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./images/hiking.png" class="d-block w-100" alt="The Austin Hiking Club"/>
                 <div class="carousel-caption">
-                  <a href="http://webtrain.austincc.edu/~mbrady/advwww/finalproject/index.html"
+                  <a href="hiking.html"
                   class="caption">The Austin Hiking Club</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./images/portfolio.png" class="d-block w-100" alt="Portfolio First Draft"/>
                 <div class="carousel-caption">
-                  <a href="http://webtrain.austincc.edu/~mbrady/portfoliosite/firstdraft/" 
+                  <a href="portfirst.html" 
                   class="caption">Portfolio First Draft</a>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./images/georgia1.png" class="d-block w-100" alt="Capstone First Draft"/>
+                <img src="./images/georgia1.png" class="d-block w-100" alt="Piano With Georgia First Draft"/>
                 <div class="carousel-caption">
-                  <a href="http://webtrain.austincc.edu/~mbrady/capstone/seconddraft/index.php"
-                  class="caption">Capstone First Draft</a>
+                  <a href="capfirst.html"
+                  class="caption">Piano With Georgia First Draft</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./images/beach.png" class="d-block w-100" alt="The Amy Beach Piano Foundation"/>
                 <div class="carousel-caption">
-                  <a href="http://webtrain.austincc.edu/~mbrady/interwww/beach/interhtmlfinal.html"
+                  <a href="beach.html"
                   class="caption">The Amy Beach Piano Foundation</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./images/schubert.png" class="d-block w-100" alt="Schubert Piano Sonatas"/>
                 <div class="carousel-caption">
-                  <a href="http://webtrain.austincc.edu/~mbrady/interwww/schubert/gradedassignment1.html" class="caption">Schubert Piano Sonatas</a>
+                  <a href="schubert.html" class="caption">Schubert's Piano Sonatas</a>
                 </div>
               </div>
             </div>
@@ -153,20 +161,25 @@
             Contact
           </h1>
           <form action="contact.php" method="post" class="container-fluid row needs-validation" novalidate>
-                <input type="text" name="contact_name" placeholder="Name" class="form-control" required>
+              <div class="sect">
+                <input type="text" name="name" placeholder="Name" class="form-control" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
                 <div class="invalid-feedback">
                     Please enter your name
-                </div>
-                <input type="text" name="student_name" placeholder="Email" class="form-control" required>
+                </div> 
+              </div>
+              <div class="sect">
+                <input type="text" name="email" placeholder="Email" class="form-control" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
                 <div class="invalid-feedback">
                     Please enter your email
                 </div>
+              </div>
+              <div class="sect">
                 <textarea rows="5" name="message" cols="30" placeholder="Message" class="form-control" required></textarea>
                 <div class="valid-feedback">
                     Looks good!
@@ -175,19 +188,35 @@
                     Please leave a message
                 </div>
                 <input type="submit" name="submit" value="SUBMIT" class="submit">
+              </div>
         </form>
+          <div class="footcont">
             <footer>
               <div class="icons">
                 <a href="https://www.linkedin.com/in/michael-brady-91777a21a/" class="fa fa-linkedin fa-2x"></a>
                 <a href="https://github.com/mbrady712" class="fa fa-github fa-2x"></a>
-                <a href={e} class="fas fa-envelope"></a>
+                <script>
+                  var a ="michael"
+                  var b ="brady712"
+                  var c ="@gmail.com"
+                  var d = a + b + c
+                  document.write("<a href=\"mailto:" + d + "\"" + "class='fas fa-envelope'></a>");
+                </script>
               </div>
               <div class="bottom">
-                <a href={k} class='fas fa-phone-alt'>{j}</a>
+                <script>
+                  var e ="410-"
+                  var f ="608"
+                  var g ="-8071"
+                  var h = e + f + g
+                  document.write("<a href=\"tel:" + h + "\"" + "class='fas fa-phone-alt'>" + h + "</a>");
+                </script>
                 <div class="copy">&copy; Michael Brady 2022</div>
               </div>
               </footer>
-    </div>
+            </div>
+          </div>
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields

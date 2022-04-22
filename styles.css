@@ -1,10 +1,8 @@
+/*SEVERAL SECTIONS/PAGES*/
 *{
     margin: 0;
     padding: 0;
 }
-
-/*SEVERAL SECTIONS/PAGES*/
-
 h1 {
     text-align: center;
     padding: 3%;
@@ -19,20 +17,40 @@ h1 {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 99;
+    background-color: #116466;
+    border-bottom: solid 3px #D1E8E2;
 }
 .nav-link{
     color: #D1E8E2 !important;
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: .25s;
 }
 .nav-link:hover{
     color: #FFCB9A !important;
-    transition: .25s;
 }
 
+/*320 — 767px: Mobile devices, iPads, Tablets*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .homelink{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .nav-item{
+        background-color: #116466;
+        padding-left: 5%;
+        border: solid 2px #D1E8E2;
+    }
+    .resume{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+    
 /*HOME*/
 
 .home{
+    padding-top: 3%;
     height: 100vh;
     background-color: #2C3531;
 }
@@ -47,51 +65,46 @@ h1 {
 /*320px — 480px: Mobile devices*/
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .home{
-        height: 50vh;
-        padding-top: 15%;
+        padding-top: 25%;
     }
     .portrait{
-        width: 100px;
+        width: 200px;
     }
 }
     
 /*481px — 768px: iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .home{
-        height: auto;
-        padding-top: 5%;
+        padding-top: 15%;
     }
     .portrait{
-        width: 150px;
+        width: 200px;
     }
 }
     
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     .home{
-        padding-top: 5%;
+        padding-top: 10%;
+    }
+    .portrait{
+        width: 250px;
     }
 }
     
-/*1025px — 1205px: Desktops, large screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1205px){
-    .home{
-        padding-top: 5%;
-    }
-}
 
 /*ABOUT*/
 
 .about{
     height: 100vh;
     background-color: #116466;
+    padding-top: 3%;
 }
 .abtwrap{
     margin-left: 10%;
     margin-right: 10%;
-    padding: 4%;
     border-radius: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #D1E8E2;
     font-size: 1.3em;
 }
@@ -99,6 +112,8 @@ h1 {
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .about{
         height: auto;
+        padding-top: 20%;
+        padding-bottom: 5%;
     }
 }
     
@@ -106,23 +121,30 @@ h1 {
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .about{
         height: auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
     }
 }
     
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-
+    .about{
+        padding-top: 7%;
+    }
 }
     
 /*1025px — 1205px: Desktops, large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1205px){
-
+    .about{
+        padding-top: 5%;
+    }
 }
 /*PROJECTS*/
 
 .projects{
     height: 100vh;
     background-color: #2C3531;
+    padding-top: 3%;
 }
 .carousel{
     width: 60%;
@@ -131,12 +153,12 @@ h1 {
 .caption{
     text-decoration: none;
     font-size: 1.5em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #116466;
+    transition: .25s;
 }
 .caption:hover{
     color: #D1E8E2;
-    transition: .25s;
 }
 .carousel-caption{
     margin-bottom: 5%;
@@ -149,22 +171,22 @@ h1 {
         width: 100%;
         margin: 0;
     }
-    .projects{
-        height: auto;
-    }
     .carousel-caption{
         font-size: .75em;
+    }
+    .projects{
+        padding-top: 15vh;
     }
 }
     
 /*481px — 768px: iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .projects{
-        height: auto;
+        padding-top: 60px;
     }
     .carousel{
-        width: 100%;
-        margin: 0;
+        width: 80%;
+        margin-left: 10%;
     }
     .carousel-caption{
         font-size: .75em;
@@ -173,6 +195,9 @@ h1 {
     
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
+    .projects{
+        padding-top: 5%;
+    }
     .carousel{
         width: 80%;
         margin-left: 10%;
@@ -181,7 +206,9 @@ h1 {
     
 /*1025px — 1205px: Desktops, large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1205px){
-
+    .projects{
+        padding-top: 5%;
+    }
 }
 
 /*CONTACT*/
@@ -189,6 +216,7 @@ h1 {
 .contact{
     height: 100vh;
     background-color: #116466;
+    padding-top: 3%;
 }
 form{
     margin-left: 25% !important;
@@ -196,17 +224,17 @@ form{
     padding: 2%;
     border-radius: 10px;
     width: 50% !important;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 input{
     background-color: #D1E8E2 !important;
-    margin-bottom: 2%;
 }
 textarea{
     background-color: #D1E8E2 !important;
 }
-.error{
-    color: red;
+.sect{
+    margin-bottom: 2%;
 }
 .submit{
     width: 20%;
@@ -214,20 +242,22 @@ textarea{
     border-radius: 5px;
     background-color: #FFCB9A;
     color:black;
-    
+    transition: .25s;
 }
 .submit:hover{
     background-color: #116466 !important;
     color:white;
-    transition: .25s;
 }
 footer{
     text-align: center;
-    margin-top: 4%;
+    margin-top: 2%;
     color: #FFCB9A !important;
     border-top: #FFCB9A solid 3px;
     border-radius: 50%;
     font-family: 'Courier New', Courier, monospace;
+}
+.footcont{
+    background-color: #116466;
 }
 .fa-linkedin{
     padding-right: 1%;
@@ -252,14 +282,18 @@ footer{
 }
 .fa:hover{
     color: #D1E8E2 !important;
+}
+.fas{
     transition: .25s;
 }
 .fas:hover{
     color: #D1E8E2 !important;
-    transition: .25s;
 }
 /*320px — 480px: Mobile devices*/
 @media only screen and (min-width: 320px) and (max-width: 480px){
+    .contact{
+        padding-top: 15%;
+    }
     form{
         width: 100% !important;
         margin: 0 !important;
@@ -268,6 +302,7 @@ footer{
         width: 30%;
     }
     footer{
+        margin-top: 14%;
         font-size: .75em;
     }
     .fa-linkedin{
@@ -280,6 +315,12 @@ footer{
     
 /*481px — 768px: iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
+    .contact{
+        padding-top: 11%;
+    }
+    footer{
+        margin-top: 2%;
+    }
     form{
         width: 80% !important;
         margin-left: 10% !important;
@@ -288,10 +329,87 @@ footer{
     
 /*769px — 1024px: Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-
+    .contact{
+        padding-top: 7%;
+    }
+    footer{
+        margin-top: 7%;
+    }
 }
     
 /*1025px — 1205px: Desktops, large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1205px){
+    .contact{
+        padding-top: 5%;
+    }
+}
 
+/*SITE PAGES*/
+.grey{
+    background-color: #2C3531;
+    padding-top: 5%;
+}
+.sitepic{
+    width: 60%;
+    margin-left: 20%; 
+    margin-bottom: 5%;
+    transition: .25s;
+}
+.sitepic:hover{
+    transform: scale(1.1);
+}
+.description{
+    color: #D1E8E2;
+    width: 80%;
+    margin-left: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+.date{
+    color: #D1E8E2;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+.sitelink{
+    text-decoration: underline;
+    color: #D1E8E2;
+    transition: .25s;
+}
+.sitelink:hover{
+    color: #FFCB9A;
+}
+/*320px — 480px: Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .grey{
+        padding-top: 20%;
+    }
+    .sitepic{
+        width: 100%;
+        margin: 0;
+    }
+}
+    
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .grey{
+        padding-top: 13%;
+    }
+    .sitepic{
+        width: 100%;
+        margin: 0;
+    }
+    .description{
+        margin-top: 5%;
+    }
+}
+    
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .grey{
+        padding-top: 7%;
+    }
+    .description{
+        margin-top: 3%;
+    }
 }
