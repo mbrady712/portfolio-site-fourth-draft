@@ -7,7 +7,7 @@ h1 {
     text-align: center;
     padding: 3%;
     color: #ddb58f;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*NAV*/
@@ -23,7 +23,7 @@ h1 {
 }
 .nav-link{
     color: #D1E8E2 !important;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto', sans-serif;
     transition: .25s;
 }
 .nav-link:hover{
@@ -114,7 +114,7 @@ h1 {
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lora', serif;;
     color: #D1E8E2;
     font-size: 1.3em;
 }
@@ -157,7 +157,7 @@ h1 {
 .caption{
     text-decoration: none;
     font-size: 1.5em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lora', serif;
     color: #116466;
     transition: .25s;
 }
@@ -218,7 +218,7 @@ form{
     padding: 2%;
     border-radius: 10px;
     width: 50% !important;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lora', serif;
 }
 
 input{
@@ -248,7 +248,7 @@ footer{
     color: #FFCB9A !important;
     border-top: #FFCB9A solid 3px;
     border-radius: 50%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lora', serif;
 }
 .footcont{
     background-color: #116466;
@@ -357,13 +357,13 @@ footer{
     color: #D1E8E2;
     width: 80%;
     margin-left: 10%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lora', serif;
     font-size: 1.2em;
 }
 .date{
     color: #D1E8E2;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lora', serif;
     font-size: 1.2em;
 }
 .sitelink{
